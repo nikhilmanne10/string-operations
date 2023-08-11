@@ -1,0 +1,4 @@
+import os
+string=["hello","hi"]
+lcp=os.path.commonprefix(string)
+print("longest common prefix",lcp)
