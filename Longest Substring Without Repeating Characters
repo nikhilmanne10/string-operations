@@ -1,0 +1,39 @@
+
+import java.util.* ;
+import java.io.*; 
+import java.util.Scanner;
+import java.math.*;
+class stringg {
+
+    public int printSubstrings(String s) {
+    	Scanner sc=new Scanner(System.in);
+    	s=sc.nextLine();
+int left=0;
+int right=0;
+int max=0;
+Set<Character> seen= new HashSet();
+while(right<s.length()) {
+	char c=s.charAt(right);
+	if(seen.add(c )) {
+	  max=Math.max(max, right-left+1);
+		right++;
+		
+	}
+	else {
+		while(s.charAt(left)!=c) {
+			seen.remove(s.charAt(left));
+			left++;
+		}
+		seen.remove(s.charAt(left));
+
+		
+	}
+	
+	
+}
+return max;
+    }
+
+    public static void main(String[] args) {
+    }
+}
