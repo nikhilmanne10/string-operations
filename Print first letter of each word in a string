@@ -1,0 +1,14 @@
+import java.util.*;
+class string1{
+	public static void main(String[]args) {
+		String input="nikhil manne photographer";
+		String []words=input.split(" ");
+		for(String word:words) {
+			if(word.isEmpty());
+		char s=	word.charAt(0);
+			System.out.print(s);
+		
+			
+		}
+	}
+}
